@@ -1,0 +1,19 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #070d19; color: #f8fafc; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+.header { background: #0d172a; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.25rem; font-weight: 700; color: #8b5cf6; }
+.badge { font-size: 0.7rem; background: rgba(139,92,246,0.15); border: 1px solid rgba(139,92,246,0.3); padding: 0.15rem 0.5rem; border-radius: 999px; color: #c084fc; }
+.nav-portfolio { color: #8b5cf6; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+.main { flex: 1; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.token-box { display: flex; flex-direction: column; gap: 0.4rem; }
+.token-box label { font-size: 0.85rem; font-weight: 600; color: #94a3b8; }
+.token-box textarea { height: 110px; background: #0a1120; border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; color: #f87171; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; padding: 0.75rem; resize: none; outline: none; }
+.claims-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.card { background: #0d172a; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.25rem; }
+.card h3 { font-size: 1rem; margin-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center; }
+.tag-red { font-size: 0.7rem; color: #f87171; font-weight: 400; }
+.tag-purple { font-size: 0.7rem; color: #c084fc; font-weight: 400; }
+pre { background: #0a1120; padding: 1rem; border-radius: 6px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #38bdf8; overflow-x: auto; min-height: 180px; }
+.info-box { font-size: 0.9rem; color: #94a3b8; }
+footer { text-align: center; padding: 1rem; color: #64748b; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); }
+footer a { color: #8b5cf6; text-decoration: none; }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT Debugger Offline — Local Token Inspector</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><span>🔐</span><h1>JWT Debugger</h1><span class="badge">100% Offline</span></div>
+    <a href="https://sabhyamtrivedycoder.github.io/portfolio/" target="_blank" class="nav-portfolio">Portfolio ↗</a>
+  </header>
+  <main class="main">
+    <div class="token-box">
+      <label>Encoded JWT Token</label>
+      <textarea id="tokenInput" placeholder="Paste eyJhbGciOi..."></textarea>
+    </div>
+    <div class="claims-grid">
+      <div class="card">
+        <h3>Header <span class="tag-red">Algorithm & Token Type</span></h3>
+        <pre id="headerOutput">{}</pre>
+      </div>
+      <div class="card">
+        <h3>Payload <span class="tag-purple">Claims & Subject</span></h3>
+        <pre id="payloadOutput">{}</pre>
+      </div>
+    </div>
+    <div class="card info-box">
+      <h3>Token Status & Timestamps</h3>
+      <div id="statusOutput">Awaiting token...</div>
+    </div>
+  </main>
+  <footer>
+    <p>Engineered by <a href="https://github.com/sabhyamtrivedycoder" target="_blank">Sabhyam Trivedy</a> • Zero Server Calls • MIT License</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
